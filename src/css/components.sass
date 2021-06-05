@@ -1,0 +1,34 @@
+.box-toggle
+	display: flex
+	margin-bottom: 1rem
+	span
+		transition: .2s
+	em
+		font-style: normal
+
+.article-wrap
+	transition: .2s
+	margin-bottom: 3rem
+
+.box-article
+	border: 1px solid $border
+	margin-bottom: 1rem
+	h3
+		font-size: 16px
+		padding: 1.5rem
+		margin: 0
+		background-color: #fff
+		border-bottom: 1px solid $border
+	div
+		background-color: #f2f2f2
+		padding: 1.5rem
+		.tip
+			font-size: 14px
+			color: #666
+
+.close.box-wrap
+	.box-toggle
+		span
+			transform: rotate(180deg)
+	.article-wrap
+		display: none

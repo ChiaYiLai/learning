@@ -12,7 +12,7 @@
 .list-table
 	list-style: none
 	padding: 0
-	margin: 0 0 3rem
+	margin: 0
 	border-bottom: 1px solid $border
 	h4
 		font-size: 16px
@@ -67,6 +67,20 @@
 				width: 20%
 			> li:last-child
 				width: 20%
+	.list-table-4
+		> li > ol
+			> li:nth-child(1)
+				width: 10%
+			> li:nth-child(2)
+				width: 20%
+			> li:nth-child(3)
+				width: 40%
+			> li:nth-child(4)
+				width: 30%
+	.list-table-4-equal
+		> li > ol
+			> li
+				width: 25%
 	.list-table-5
 		> li > ol
 			> li

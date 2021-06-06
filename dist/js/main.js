@@ -11,3 +11,19 @@ $('.btn-nav-main').on('click', function() {
 $('.box-toggle').on('click', function() {
     $(this).closest('.box-wrap').toggleClass('close');
 });
+
+$('.btn-more').on('click', function(e) {
+    e.preventDefault();
+    $(this).closest('.box-more').addClass('open');
+});
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    const headerH = $('.header-main').outerHeight();
+    const { top } = $($.attr(this, 'href')).offset();
+    const target = top - headerH - 20;
+    $('html, body').animate({
+        scrollTop: target
+    }, 500);
+    $('body').removeClass('open-nav-main');
+});

@@ -1,3 +1,9 @@
+.box-section
+	padding-bottom: 3rem
+	+lg
+		display: flex
+	.box-content
+		flex-grow: 1
 .box-toggle
 	display: flex
 	margin-bottom: 1rem
@@ -32,3 +38,18 @@
 			transform: rotate(180deg)
 	.article-wrap
 		display: none
+
+.box-more
+	display: flex
+	color: $gray
+	&.open
+		.init
+			display: none
+		.more
+			display: block
+	.more
+		display: none
+	.btn-more
+		font-size: 14px
+		color: $gray-light
+		margin-left: .5rem

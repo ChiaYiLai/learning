@@ -1,7 +1,7 @@
 const { href } = window.location;
 const navs = ['index', 'school', 'colleges', 'plans', 'faq'];
 navs.map(nav => {
-    if (href.includes(nav)) $(`#${nav}`).addClass('active');
+    if (href.includes(nav)) $(`#${nav}`).addClass('active').siblings().removeClass('active');
 });
 
 $('.btn-nav-main').on('click', function() {

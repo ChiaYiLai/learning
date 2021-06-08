@@ -1,5 +1,5 @@
 .box-section
-	padding-bottom: 3rem
+	padding-bottom: 1rem
 	+lg
 		display: flex
 	.box-content
@@ -9,6 +9,7 @@
 	margin-bottom: 1rem
 	span
 		transition: .2s
+		transform-origin: 12px 12px
 	em
 		font-style: normal
 
@@ -28,6 +29,7 @@
 	div
 		background-color: #f2f2f2
 		padding: 1.5rem
+		height: 100%
 		.tip
 			font-size: 14px
 			color: #666
@@ -53,3 +55,42 @@
 		font-size: 14px
 		color: $gray-light
 		margin-left: .5rem
+
+.btn-old
+	display: flex
+	justify-content: center
+	align-items: center
+	text-decoration: none
+	color: $gray-light
+	cursor: pointer
+	span
+		margin-left: .5rem
+		font-size: 20px
+
+.box-gray
+	background-color: $gray
+	color: #fff
+	padding: 3rem 0 1rem
+
+.bar
+	background-repeat: no-repeat
+	background-size: 100% auto
+	height: 100px
+	+lg
+		margin-left: 58px
+.bar-blue
+	background-image: url(../img/bar/blue-m.png)
+	+md
+		background-image: url(../img/bar/blue.png)
+.bar-yellow
+	background-image: url(../img/bar/yellow-m.png)
+	+md
+		background-image: url(../img/bar/yellow.png)
+.bar-pink
+	background-image: url(../img/bar/pink-m.png)
+	+md
+		background-image: url(../img/bar/pink.png)
+.bar-brown
+	background-image: url(../img/bar/brown-m.png)
+	+md
+		background-image: url(../img/bar/brown.png)

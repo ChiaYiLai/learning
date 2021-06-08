@@ -1,6 +1,8 @@
 doctype html
 html(lang="zh-tw")
     include ./head.pug
-    include ./header.pug
-    block content
-    include ./js.pug
+    body
+        include ./header.pug
+        block content
+        include ./footer.pug
+        include ./js.pug

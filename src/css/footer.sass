@@ -1,0 +1,28 @@
+.footer-main
+	background-color: #454545
+	padding: 2rem 0
+.nav-footer
+	ul
+		display: flex
+		flex-wrap: wrap
+		list-style: none
+		margin: 0
+		padding: 0
+		li
+			color: #fff
+			margin-bottom: .75rem
+			&:nth-child(2n-1)
+				width: 40%
+				+md
+					width: 15%
+			&:nth-child(2n)
+				width: 60%
+				+md
+					width: 85%
+			a
+				color: #fff
+				text-decoration: none
+				transition: .2s
+				&:hover
+					color: $gray-light
+

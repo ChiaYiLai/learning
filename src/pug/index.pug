@@ -1,4 +1,12 @@
-doctype html
-include ./includes/head.pug
-include ./includes/header.pug
-include ./includes/js.pug
+extends ./includes/base.pug
+block content
+    include ./index/banner.pug
+    .main-main.py-4#index-page
+        .container
+            include ./index/about.pug
+            include ./index/news.pug
+            include ./index/daily.pug
+            include ./index/videos.pug
+            include ./index/demo.pug
+    include ./index/support.pug
+    include ./index/modal-news.pug

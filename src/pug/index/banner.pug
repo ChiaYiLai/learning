@@ -1,2 +1,4 @@
 .banner-2
-    img.w-100(src="./dist/img/banner.svg" alt="線上教學便利包")
+    picture
+        source(srcset="./dist/img/desktop.svg" media="(min-width: 576px)")
+        img.w-100(src="./dist/img/mobile.svg" alt="線上教學便利包")

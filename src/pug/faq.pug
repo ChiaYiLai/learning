@@ -2,7 +2,62 @@ extends ./includes/base.pug
 block content
     .main-main.py-4
         .container
-            include ./faq/faq-list.pug
-            include ./faq/info.pug
+            .box-section#faq-list
+                h2.title-main
+                    span.material-icons-outlined info
+                    | 常見問題
+                .box-content
+                    .box-wrap
+                        .box-toggle
+                            span.material-icons-outlined.text-main.me-2 expand_circle_down
+                            em 常見問題
+                        .article-wrap
+                            .box-article
+                                h3 Q1 線上教學模式，有那幾種模式?
+                                div
+                                    ol.list-unstyled
+                                        li.mb-4
+                                            b (一)同步教學模式
+                                            ol
+                                                li 運用視訊同步教學的工具，搭配教師現有的教材(如教科書補充教材)，讓教師與學生同步上課互動學習。
+                                                li 運用非視訊同步教學的工具，讓教師與學生可透過文字、聲音進行同步上課互動學習。
+                                        li.mb-4
+                                            b (二)非同步教學模式
+                                            .ms-4 可運用數位資源與工具，教師登入線上學習平臺備課，指派學生適宜課程、學習內容與作業，教師亦可依據學生的學習狀況，給予適時反饋，指派學習任務或課後作業繳交，透過線上學習平臺可記錄了解學生學習成效。
+                                        li
+                                            b (三)混成教學模式
+                                            .ms-4 可運用同步與非同步教學模式，可讓線上教學時間更有彈性，亦可進行師生互動，並提升學習興趣與成效。
+                            .box-article
+                                h3 Q2：中小學老師如何在停課期間幫助學生在家中進行線上學習？
+                                div 直播（視訊會議）工具，例如：Jitsi Meet、CyberLink U Meeting、Microsoft Teams、 Cisco WebEx、Adobe Connect、Google Meet。各工具的應用方式簡介，已經整理於教育雲-線上教學便利包(
+                                    a.text-link(href="https://learning.cloud.edu.tw/onlinelearning/" target="_blank" rel="noopener noreferrer") https://learning.cloud.edu.tw/onlinelearning/
+                                    | )，操作說明可點選網頁各工具連結，有任何問題亦可聯繫各客服電話或電子郵件。
+                            .box-article
+                                h3 Q3：針對線上教學與學習，有建議的數位學習平臺嗎？
+                                div 本部已整理數位學習平臺資訊，放置於教育雲-線上教學便利包(
+                                    a.text-link(href="https://learning.cloud.edu.tw/onlinelearning/" target="_blank" rel="noopener noreferrer") https://learning.cloud.edu.tw/onlinelearning/
+                                    | )，分別有常用的同步、非同步教學工具，供學校或教師選用。
+                            .box-article
+                                h3 Q4：線上教學該如何做，有教學影片可參考?
+                                div 本部邀請有經驗的教師團隊共製作7支影片，從瞭解線上教學基本概念，到使用不同工具示範線上同步教學及混成教學，分主題介紹，讓教師按圖索驥，相關影片可參考教育雲線上教學便利包(
+                                    a.text-link(href="https://learning.cloud.edu.tw/onlinelearning/" target="_blank" rel="noopener noreferrer") https://learning.cloud.edu.tw/onlinelearning/
+                                    | )教學影片及實施注意事項。
+                            .box-article
+                                h3 Q5：線上學習如何確保學習品質與成效？?
+                                div 建議針對線上授課內容規劃多元及合適評量方式，並視學生學習狀況調整評量方式，另可善加運用線上學習平臺提供指派作業、練習題、適性測驗等功能，或是利用同步視訊、小組討論等功能，觀察學生線上上課情形及了解學習狀況與成效。
+                            .box-article
+                                h3 Q6：學生線上學習需要網路及資訊設備，可向誰借用？?
+                                div 建議學生善用家中既有網路和資訊設備。弱勢家庭學生家中無可使用之網路和資訊設備者，由學校先行調配校內資源，不足部分，再由縣市調配縣(市)內資源。設備如有不足，可由縣市政府教育局處向本部借用。
+                            .box-article
+                                h3 Q7：電信業者有提供網路優惠方案嗎??
+                                div 本部已協商電信業者提供免費及優惠方案，可參考教育雲線上教學便利(
+                                    a.text-link(href="https://learning.cloud.edu.tw/onlinelearning/" target="_blank" rel="noopener noreferrer") https://learning.cloud.edu.tw/onlinelearning/
+                                    | )網路優惠方案，以利課程實施。
+                            .box-article
+                                h3 Q8：相關問題諮詢，可向那些單位聯絡??
+                                div 相關使用問題反應及諮詢，可參考教育雲線上教學便利包(
+                                    a.text-link(href="https://learning.cloud.edu.tw/onlinelearning/" target="_blank" rel="noopener noreferrer") https://learning.cloud.edu.tw/onlinelearning/
+                                    | )網站客服聯絡方式，以利課程實施。
+
 
 

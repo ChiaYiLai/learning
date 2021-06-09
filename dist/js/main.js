@@ -1,5 +1,5 @@
 const { href } = window.location;
-const navs = ['index', 'school', 'colleges', 'plans', 'faq'];
+const navs = ['index', 'map', 'support', 'plans', 'faq', 'contact'];
 navs.map(nav => {
     if (href.includes(nav)) $(`#${nav}`).addClass('active').siblings().removeClass('active');
 });
@@ -29,16 +29,16 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 });
 
 if ($('#index-page').hasClass('main-main')) {
-    var newsModal = new bootstrap.Modal(document.getElementById('modal-news'), {
-        keyboard: false
-    })
+    // var newsModal = new bootstrap.Modal(document.getElementById('modal-news'), {
+    //     keyboard: false
+    // })
 
-    $('.btn-news').on('click', function(e) {
-        e.preventDefault();
-        newsModal.show();
-        const text = $(this).closest('li').find('p').text();
-        $('#modal-news-body').text(text);
-    });
+    // $('.btn-news').on('click', function(e) {
+    //     e.preventDefault();
+    //     newsModal.show();
+    //     const text = $(this).closest('li').find('p').text();
+    //     $('#modal-news-body').text(text);
+    // });
 
     $('.btn-daily').on('click', function(e) {
         e.preventDefault();

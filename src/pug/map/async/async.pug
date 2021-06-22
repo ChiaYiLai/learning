@@ -1,0 +1,79 @@
+.box-wrap
+    .d-flex
+        .box-toggle
+            span.material-icons-outlined.text-main.me-2 expand_circle_down
+            em 非同步教學
+        span.material-icons-outlined.mx-2.text-gray.btn-more-info bookmark
+        a.text-link(href="#") 非同步教學工具
+    .more-info
+        p 非同步教學定義：當教學者與學習者之間存在時間或空間的分隔，稱為非同步線上學習。
+        p 非同步線上學習環境通常利用媒體科技來傳遞課程內容，並提供教學者與學習者、教材與學習者、學習者與學習者之間的雙向互動。
+        p 常見的非同步線上學習應用如教學者把教學內容或課堂筆記以圖文或影像形式存放在課程網站中，提供學習者可隨時收看或閱讀；或是學習者利用電腦工具繳交作業；或透過線上討論看板發表意見、進行互動等師生不同時在線上的學習形式，即稱為非同步線上學習。
+            small.text-gray (來源出處：
+                a.text-link(href="https://terms.naer.edu.tw/detail/1678802/" target="_blank" rel="noopener noreferrer") 國家教育研究院
+                | )
+    .article-wrap
+        ul.list-videos.row
+            li.col-md-6
+                .box-article
+                    h3 基礎工具熟悉與教學備課<br>(因材網為例)
+                    div
+                        ul.list-videos
+                            li
+                                a.btn-box-videos(href="#" data-target="#box-videos-async-1-1")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 設備準備、師生帳號申請與管理。
+                                        em (1)
+                            li
+                                a.btn-box-videos(href="#" data-target="#box-videos-async-1-2")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 因材網教材介紹
+                                        em (2)
+                            li
+                                a.btn-box-videos(href="#" data-target="#box-videos-async-1-3")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 知識結構學習及任務指派功能
+                                        em (20)
+                            li
+                                a.btn-box-videos(href="#" data-target="#box-videos-async-1-4")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 智慧適性診斷功能
+                                        em (2)
+            include ./1-1.pug
+            include ./1-2.pug
+            include ./1-3.pug
+            include ./1-4.pug
+            li.col-md-6
+                .box-article
+                    h3 課程經營技巧<br>(因材網為例)
+                    div
+                        ul.list-videos
+                            li
+                                a.btn-box-videos(href="#" data-target="#box-videos-sync-2-1")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 單元診斷
+                                        em (1)
+                            li
+                                a.btn-box-videos(href="#" data-target="#box-videos-sync-2-2")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 班級經營技巧
+                                        em (2)
+            include ./2-1.pug
+            include ./2-2.pug
+
+            li.col-md-6
+                .box-article
+                    h3 自主學習教學模式
+                    div
+                        ul.list-videos
+                            li
+                                a(href="#")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 科技輔助自主學習教學模式簡介
+                                        em (1)
+                            li
+                                a(href="#")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 同步教學工具搭配自主學習功能
+                                        em (2)
+

@@ -17,17 +17,6 @@ $('.btn-more').on('click', function(e) {
     $(this).closest('.box-more').addClass('open');
 });
 
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-    const headerH = $('.header-main').outerHeight();
-    const { top } = $($.attr(this, 'href')).offset();
-    const target = top - headerH - 20;
-    $('html, body').animate({
-        scrollTop: target
-    }, 500);
-    $('body').removeClass('open-nav-main');
-});
-
 if ($('#index-page').hasClass('main-main')) {
     // var newsModal = new bootstrap.Modal(document.getElementById('modal-news'), {
     //     keyboard: false
@@ -52,7 +41,28 @@ if ($('#index-page').hasClass('main-main')) {
     });
 }
 
+$('.btn-more-info').on('click', function() {
+    $(this).parent().next('.more-info').slideToggle();
+});
 
+$('.btn-box-videos').on('click', function(e) {
+    e.preventDefault();
+    const target = $(this).data('target');
+    $('.box-videos').slideUp();
+    $(target).slideDown();
+});
 
+$('.btn-close-box-videos').on('click', function() {
+    $(this).closest('li').slideUp();
+});
 
-
+$('.btn-scroll').on('click', function(e) {
+    e.preventDefault();
+    const headerH = $('.header-main').outerHeight();
+    const { top } = $($.attr(this, 'href')).offset();
+    const target = top - headerH - 20;
+    $('html, body').animate({
+        scrollTop: target
+    }, 500);
+    $('body').removeClass('open-nav-main');
+});

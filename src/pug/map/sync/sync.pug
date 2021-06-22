@@ -1,0 +1,77 @@
+.box-wrap
+    .d-flex
+        .box-toggle
+            span.material-icons-outlined.text-main.me-2 expand_circle_down
+            em 同步教學
+        span.material-icons-outlined.mx-2.text-gray.btn-more-info bookmark
+        a.text-link(href="#") 同步教學工具
+    .more-info
+        p 同步教學模式，係指在學習環境中，教學者與學習者雖然分隔兩地，但仍能即時地進行教與學之互動。為了達成教學過程中必要的互動，學習者通常使用線上教室應用程式，來與其他學習者或教學者進行類似面對面溝通。
+            small.text-gray (來源出處：
+                a.text-link(href="https://terms.naer.edu.tw/detail/1678790/" target="_blank" rel="noopener noreferrer") 國家教育研究院
+                | )
+    .article-wrap
+        ul.list-videos.row
+            li.col-md-6
+                .box-article
+                    h3 基礎工具熟悉與教學備課<br>(Google meet)
+                    div
+                        ul.list-videos
+                            li
+                                a.btn-box-videos(href="#" data-target="#box-videos-sync-1-1")
+                                    span.material-icons-outlined play_circle_filled
+                                    span OpenID 帳號申請說明
+                                        em (1)
+                            li
+                                a.btn-box-videos(href="#" data-target="#box-videos-sync-1-2")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 認識數位資源網站、教材與素材準備等
+                                        em (2)
+                            li
+                                a.btn-box-videos(href="#" data-target="#box-videos-sync-1-3")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 視訊設備準備、師生帳號申請與管理、開設會議室及系統功能等
+                                        em (20)
+                            li
+                                a.btn-box-videos(href="#" data-target="#box-videos-sync-1-4")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 講授式教學、學習任務安排等
+                                        em (2)
+            include ./1-1.pug
+            include ./1-2.pug
+            include ./1-3.pug
+            include ./1-4.pug
+            li.col-md-6
+                .box-article
+                    h3 課程經營技巧<br>(Google meet)
+                    div
+                        ul.list-videos
+                            li
+                                a.btn-box-videos(href="#" data-target="#box-videos-sync-2-1")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 親師生聯繫管道及學生出缺勤管理工具
+                                        em (1)
+                            li
+                                a.btn-box-videos(href="#" data-target="#box-videos-sync-2-2")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 同步工具課堂經營功能，(如：視訊、即時通訊、舉手、白板等互動功能)、雲端硬碟空間繳交作業等
+                                        em (2)
+            include ./2-1.pug
+            include ./2-2.pug
+
+            li.col-md-6
+                .box-article
+                    h3 自主學習教學模式
+                    div
+                        ul.list-videos
+                            li
+                                a(href="#")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 科技輔助自主學習教學模式簡介
+                                        em (1)
+                            li
+                                a(href="#")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 同步教學工具搭配自主學習功能
+                                        em (2)
+

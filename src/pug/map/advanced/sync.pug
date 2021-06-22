@@ -1,0 +1,31 @@
+.box-wrap
+    .d-flex
+        .box-toggle
+            span.material-icons-outlined.text-main.me-2 expand_circle_down
+            em 同步教學
+        span.material-icons-outlined.mx-2.text-gray.btn-more-info bookmark
+        a.text-link(href="support.html#sync") 同步教學工具
+    .more-info
+        p 同步教學模式，係指在學習環境中，教學者與學習者雖然分隔兩地，但仍能即時地進行教與學之互動。為了達成教學過程中必要的互動，學習者通常使用線上教室應用程式，來與其他學習者或教學者進行類似面對面溝通。
+            small.text-gray (來源出處：
+                a.text-link(href="https://terms.naer.edu.tw/detail/1678790/" target="_blank" rel="noopener noreferrer") 國家教育研究院
+                | )
+    .article-wrap
+        ul.list-videos.row
+            li.col-md-6
+                .box-article
+                    h3 自主學習教學模式<br>(Google Meet為例)
+                    div
+                        ul.list-videos
+                            li
+                                a.btn-box-videos(href="#" data-target="#advanced-sync-1-1")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 科技輔助自主學習教學模式簡介
+                                        em (1)
+                            li
+                                a.btn-box-videos(href="#" data-target="#advanced-sync-1-2")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 同步教學工具搭配自主學習功能
+                                        em (1)
+            include ./sync/1-1.pug
+            include ./sync/1-2.pug

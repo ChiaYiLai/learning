@@ -1,0 +1,25 @@
+.box-wrap
+    .d-flex
+        .box-toggle
+            span.material-icons-outlined.text-main.me-2 expand_circle_down
+            em 線上混成教學
+        span.material-icons-outlined.mx-2.text-gray.btn-more-info bookmark
+        a.text-link(href="support.html") 線上混成教學
+    .more-info
+        p 廣義的混成學習則泛指結合應用不同的教學策略、教學方法、教學媒體、教學科技的一種教學模式，涵蓋同步（synchronous）與非同步（asynchronous）學習的一連串學習活動。
+            small.text-gray (來源出處：
+                a.text-link(href="https://terms.naer.edu.tw/detail/1678942/?index=1" target="_blank" rel="noopener noreferrer") 國家教育研究院
+                | )
+    .article-wrap
+        ul.list-videos.row
+            li.col-md-6
+                .box-article
+                    h3 自主學習教學模式<br>(GoogleMeet+因材網+Classroom為例)
+                    div
+                        ul.list-videos
+                            li
+                                a.btn-box-videos(href="#" data-target="#advanced-mix-1-1")
+                                    span.material-icons-outlined play_circle_filled
+                                    span 自主學習 X 混成教學：教師備課、學生自學、組內共學、組間共學
+                                        em (1)
+            include ./mix/1-1.pug

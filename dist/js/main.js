@@ -41,8 +41,8 @@ if ($('#index-page').hasClass('main-main')) {
     });
 }
 
-$('.btn-more-info').on('click', function() {
-    $(this).parent().next('.more-info').slideToggle();
+$('.btn-more-info').hover(function() {
+    $(this).parent().next('.more-info').slideDown();
 });
 
 $('.btn-box-videos').on('click', function(e) {

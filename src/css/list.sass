@@ -194,6 +194,9 @@
 				height: auto
 			a
 				display: none
+		&:nth-child(-n+3)
+			p
+				font-weight: bold
 		&:nth-child(n+6)
 			display: none
 		> div
@@ -201,13 +204,18 @@
 			span
 				position: relative
 				top: 8px
+				margin-right: .5rem
+				+md
+					display: block
+					top: 0
+					margin: 0
 			em
 				font-size: 14px
 				color: $gray-light
 				font-style: normal
 			+md
 				text-align: center
-				margin: 0 1rem 0 0
+				margin: 0 3rem 0 0
 		p
 			line-height: 1.5
 			height: 4.5em
@@ -215,6 +223,7 @@
 			margin: 0
 			+md
 				height: 3em
+				max-width: 570px
 		a
 			font-size: 14px
 			display: block
@@ -225,7 +234,7 @@
 			white-space: nowrap
 			margin: .5rem 0 0
 			+md
-				margin: 0 0 0 2rem
+				margin: 0 0 0 3rem
 			&:hover
 				text-decoration: none
 				color: $gray-dark
@@ -277,6 +286,9 @@
 .list-videos
 	list-style: none
 	padding: 0
+	&.list-videos-advanced
+		.box-article > div
+			background-color: #F9E8D880
 	> li
 		margin-bottom: .5rem
 		> a

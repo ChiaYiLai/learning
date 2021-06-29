@@ -1,5 +1,5 @@
 const { href } = window.location;
-const navs = ['index', 'map', 'support', 'plans', 'faq', 'contact'];
+const navs = ['index', 'map', 'support', 'plans', 'faq', 'contact', 'units'];
 navs.map(nav => {
     if (href.includes(nav)) $(`#${nav}`).addClass('active').siblings().removeClass('active');
 });

@@ -68,7 +68,7 @@
 				position: relative
 				> li
 					&:not(:last-child)
-						margin-right: 2rem
+						margin-right: 1rem
 					> a
 						font-size: 18px
 						color: #000
@@ -116,7 +116,11 @@
 								padding: .5rem 0
 								&:hover
 									color: #000
-
+		+xl
+			> ul
+				> li
+					&:not(:last-child)
+						margin-right: 2rem
 .btn-nav-main
 	position: absolute
 	top: -6px

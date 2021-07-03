@@ -295,6 +295,9 @@
 			display: flex
 			align-items: center
 			text-decoration: none
+			&.btn-box-videos.active
+				font-weight: bold
+				color: #000
 			> span
 				margin-right: .5rem
 				> em
@@ -314,8 +317,19 @@
 			margin-bottom: 0
 	a
 		text-decoration: none
+		background: url(../img/map/icon-play.png) left 1rem top 1.5rem no-repeat #fff
+		background-size: 36px 36px
+		padding: 1rem 1rem 1rem 64px
+		display: block
+		h3
+			border: 0
+			padding: 0
+			height: 4.5em
+			line-height: 1.5
+			overflow: hidden
 		img
 			width: 100%
+			display: none
 
 .list-units
 	list-style: none
